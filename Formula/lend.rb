@@ -1,28 +1,28 @@
 class Lend < Formula
   desc "Approve remote requests for local commands and SSH keys"
   homepage "https://github.com/antoniomika/lend"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     depends_on macos: :ventura
     on_arm do
-      url "https://github.com/antoniomika/lend/releases/download/v0.0.3/lend_0.0.3_darwin_arm64.tar.gz"
-      sha256 "65986d60fb1e7e04b42d9e900a246b3bce741b377e2d6a793cae718e49a2b9be"
+      url "https://github.com/antoniomika/lend/releases/download/v0.0.4/lend_0.0.4_darwin_arm64.tar.gz"
+      sha256 "df177e2a3df7e5b7866fe13a84187b90ed14c331704f9c5f57e37c647e645ec6"
     end
     on_intel do
-      url "https://github.com/antoniomika/lend/releases/download/v0.0.3/lend_0.0.3_darwin_amd64.tar.gz"
-      sha256 "3abc9a9caaeed3e54e4c0939aa0831425603c245fb0742b47f536f2b2bd30bd2"
+      url "https://github.com/antoniomika/lend/releases/download/v0.0.4/lend_0.0.4_darwin_amd64.tar.gz"
+      sha256 "381afa9f30547027b1a7f734ab4c7d3a46229d3299dc01d51e81f6e41ea60d29"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/antoniomika/lend/releases/download/v0.0.3/lend_0.0.3_linux_arm64.tar.gz"
-      sha256 "330db425401e407db4cd9e98e71a3d164a7c1245ee15d163b8817c73cd052dc2"
+      url "https://github.com/antoniomika/lend/releases/download/v0.0.4/lend_0.0.4_linux_arm64.tar.gz"
+      sha256 "7d9dded319a23002f349592636e36357820c7c7c6a91deaf7c5f6f33fd1099f9"
     end
     on_intel do
-      url "https://github.com/antoniomika/lend/releases/download/v0.0.3/lend_0.0.3_linux_amd64.tar.gz"
-      sha256 "d82d1bde318466c62858e4f3def0b00e073b82a6a32e8391799d5af262705458"
+      url "https://github.com/antoniomika/lend/releases/download/v0.0.4/lend_0.0.4_linux_amd64.tar.gz"
+      sha256 "516bff65f4f5cca1714ca4e05d367214b002e20813caf7aff874c77d6f4d2cd4"
     end
   end
 
@@ -32,6 +32,6 @@ class Lend < Formula
   end
 
   test do
-    assert_match "v0.0.3", shell_output("#{bin}/lend version")
+    assert_match "v0.0.4", shell_output("#{bin}/lend version")
   end
 end
